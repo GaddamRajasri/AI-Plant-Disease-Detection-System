@@ -1,0 +1,112 @@
+/* General Styling */
+.body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+    background-size: cover;
+    background-image: url(a.jpeg.jpg);
+}
+
+.container {
+    display: flex;
+    flex-wrap: nowrap; /* Keep upload and result containers in one row */
+    align-items: flex-start; /* Align items at the top */
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%;
+    max-width: 1200px;
+    box-sizing: border-box;
+    gap: 20px; /* Space between upload and result sections */
+}
+
+/* Left Section: Upload Box */
+.upload-section {
+    flex: 1 1 60%; /* 60% of the container width */
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h2 {
+    color: green;
+    margin-bottom: 20px;
+}
+
+.upload-box {
+    border: 2px dashed #00b4ff;
+    border-radius: 12px;
+    padding: 20px;
+    background-color: #f5faff;
+    text-align: center;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto; /* Center the box horizontally */
+}
+
+#upload-preview {
+    margin-bottom: 20px;
+}
+
+.upload-icon {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.upload-label {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.upload-label:hover {
+    background-color: #0056b3;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.file-info {
+    font-size: 12px;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Right Section: Result Container */
+.result-container {
+    flex: 1 1 40%; /* 40% of the container width */
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    border-left: 1px solid #eee; /* Optional: separator line */
+}
+
+.result-container h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.result-box {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 10px;
+    background: #f9f9f9;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
